@@ -1,0 +1,17 @@
+.header {
+    background-color: #474749;
+    padding: 1rem;
+    color: #116EAA;
+    text-align: center;
+  }
+  
+  .menu-button {
+    background-color: #ff0000;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .menu-button:hover {
+    background-color: #660000;
+  }
