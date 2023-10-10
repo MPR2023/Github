@@ -67,6 +67,17 @@ def unified_chat_endpoint(request):
     except Exception as e:
         logger.error(f"An error occurred: {e}")  # Logging the exception
         return JsonResponse({"error": f"An error occurred: {e}"})
+    
+@api_view(['POST'])
+def fetch_protocol_based_on_location(request):
+    location_data = request.data.get('location', {})
+    latitude = location_data.get('latitude', None)
+    longitude = location_data.get('longitude', None)
+    
+    # Your logic to fetch the protocol based on location
+    protocol = "Some Protocol Data"
+    
+    return Response({"protocol": protocol})
 
 # Rest of your code for ProtocolViewSet etc. stays the same
 
