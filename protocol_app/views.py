@@ -79,6 +79,17 @@ def fetch_protocol_based_on_location(request):
     
     return Response({"protocol": protocol})
 
+@api_view(['POST'])
+def fetch_protocol_based_on_location(request):
+    location_data = request.data.get('location', {})
+    latitude = location_data.get('latitude', None)
+    longitude = location_data.get('longitude', None)
+    
+    # Your logic to fetch the protocol based on location
+    protocol = "Some Protocol Data"
+    
+    return Response({"protocol": protocol})
+
 # Rest of your code for ProtocolViewSet etc. stays the same
 
 class ProtocolViewSet(viewsets.ModelViewSet):
