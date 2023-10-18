@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\paulm\\OneDrive\\Desktop\\Backend\\MyRetailProtocolProject\\myenv\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\paulm\\OneDrive\\Desktop\\Backend\\MyRetailProtocolProject\\3env\\Scripts\\python.exe",
+    "git.ignoreLimitWarning": true
 }
